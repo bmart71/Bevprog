@@ -89,7 +89,9 @@ try{
 	return 0;
 } catch (exception& e){
 	cerr << "Error: " << e.what() << endl;
+	return 1;
 } catch (...){
 	cerr << "Unknown exception!\n";
+	return 2;
 }
 }
